@@ -1,0 +1,28 @@
+.hero-image{background-image:url("../assets/ionique/ionique-page-2-image-1.jpeg")}
+.hero-specs{grid-template-columns:repeat(4,minmax(0,1fr))}
+.gallery-stage>img{opacity:.9;filter:none}
+.mode-gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:42px 0 0}
+.mode-gallery figure{min-width:0;margin:0;background:#eae8e0}
+.mode-gallery img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.mode-gallery figcaption{min-height:44px;display:flex;align-items:center;justify-content:space-between;gap:8px;padding:8px 10px;color:#555b56;font-size:8px;text-transform:uppercase;letter-spacing:.04em}
+.mode-gallery figcaption span:last-child{color:#7a7f78;text-align:right}
+.drone-source-image{position:relative;z-index:1;width:min(78%,460px);max-height:430px;object-fit:contain;mix-blend-mode:multiply}
+.logistics-source{max-width:980px;margin:42px 0 0}
+.logistics-source img{width:100%;height:auto}
+.logistics-source figcaption{margin-top:8px;color:#737770;font-size:9px;text-transform:uppercase;letter-spacing:.07em}
+@media(max-width:820px){.mode-gallery{grid-template-columns:repeat(2,minmax(0,1fr))}.drone-source-image{max-height:310px}}
+@media(max-width:560px){
+  .hero h1{font-size:clamp(60px,16.5vw,92px)}
+  .development h2{font-size:clamp(36px,9.5vw,48px)}
+  .mode-gallery{gap:8px;margin-top:30px}
+  .mode-gallery figcaption{align-items:flex-start;flex-direction:column;gap:1px;font-size:7px}
+  .drone-source-image{width:min(80%,300px);max-height:250px}
+  .logistics-source{margin-top:32px}
+  .hero-specs{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .hero-specs div:nth-child(2){border-right:0}
+  .hero-specs div:nth-child(3){padding-left:0}
+  .development-grid>*{min-width:0}
+  .delivery-numbers{min-width:0;grid-template-columns:repeat(2,minmax(0,1fr))}
+  .delivery-number{min-width:0}
+  .delivery-number span,.delivery-number strong,.delivery-number small{overflow-wrap:anywhere}
+}
