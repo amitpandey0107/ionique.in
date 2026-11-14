@@ -26,3 +26,10 @@
   .delivery-number{min-width:0}
   .delivery-number span,.delivery-number strong,.delivery-number small{overflow-wrap:anywhere}
 }
+.nav-links a,.nav-cta{font-family:var(--display)}
+h1{font-size:clamp(48px,7vw,100px)!important}
+h2{font-size:clamp(28px,3.8vw,52px)!important}
+@media(max-width:560px){
+  h1{font-size:clamp(40px,11vw,62px)!important}
+  h2{font-size:clamp(26px,6.4vw,36px)!important}
+}
